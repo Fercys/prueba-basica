@@ -1,0 +1,8 @@
+<label>Escriba la cadena a evaluar ejemplo: 1,2,3,4,2,5,6</label>
+
+<div>
+  <input type="text" [ngModel]="secuencia_input" (ngModelChange)="secuencia_input = $event">
+  <button (click)="pruebaSecuencia()">Aceptar</button>
+</div>
+
+<div class="color">{{result}}</div>
